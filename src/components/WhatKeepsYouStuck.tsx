@@ -74,7 +74,7 @@ export default function WhatKeepsYouStuck() {
                         {points.map((point, index) => (
                             <div
                                 key={index}
-                                className={`flex gap-6 rounded-lg transition-all duration-700 hover:bg-bg-light ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'
+                                className={`flex gap-6 rounded-lg transition-all duration-700  ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'
                                     }`}
                                 style={{ transitionDelay: `${index * 150}ms` }}
                             >

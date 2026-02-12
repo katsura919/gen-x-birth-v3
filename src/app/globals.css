@@ -6,22 +6,32 @@
 
 :root {
   /* Primary Colors */
-  --primary: #7B6A9B;           /* Deep Lavender - Headlines, section accents, hover states */
-  --secondary: #6EC6CA;         /* Soft Turquoise - CTA buttons, highlights, key phrases */
-  --accent-dark: #4A3766;       /* Muted Plum - Hero text, strong headers, footer */
-  
+  --primary: #7B6A9B;
+  /* Deep Lavender - Headlines, section accents, hover states */
+  --secondary: #6EC6CA;
+  /* Soft Turquoise - CTA buttons, highlights, key phrases */
+  --accent-dark: #4A3766;
+  /* Muted Plum - Hero text, strong headers, footer */
+
   /* Background Colors */
-  --bg-light: #F4F0F8;          /* Whisper Lavender - Alternating section backgrounds */
-  --bg-main: #FDFBFF;           /* Warm White - Primary page background */
-  
+  --bg-light: #F4F0F8;
+  /* Whisper Lavender - Alternating section backgrounds */
+  --bg-main: #FDFBFF;
+  /* Warm White - Primary page background */
+
   /* Text Colors */
-  --text-primary: #2E2E3A;      /* Charcoal Slate - Body copy */
-  --text-secondary: #8A8A99;    /* Dusty Gray - Subtext, captions, secondary info */
-  
+  --text-primary: #2E2E3A;
+  /* Charcoal Slate - Body copy */
+  --text-secondary: #8A8A99;
+  /* Dusty Gray - Subtext, captions, secondary info */
+
   /* Interactive Colors */
-  --cta-hover: #3A9EA3;         /* Deep Teal - Button hover state */
-  --emotional-accent: #D4A9B8;  /* Blush Rose - Subtle dividers, quote marks, small accents */
-  --highlight-bg: #E8F6F7;      /* Pale Turquoise - Quote blocks, callout boxes */
+  --cta-hover: #3A9EA3;
+  /* Deep Teal - Button hover state */
+  --emotional-accent: #D4A9B8;
+  /* Blush Rose - Subtle dividers, quote marks, small accents */
+  --highlight-bg: #E8F6F7;
+  /* Pale Turquoise - Quote blocks, callout boxes */
 }
 
 /* ========================================
@@ -40,7 +50,7 @@
   --color-cta-hover: var(--cta-hover);
   --color-emotional-accent: var(--emotional-accent);
   --color-highlight-bg: var(--highlight-bg);
-  
+
   /* Font Families */
   --font-headline: var(--font-playfair);
   --font-body: var(--font-inter);
@@ -52,17 +62,27 @@
    BASE TYPOGRAPHY STYLES
    ======================================== */
 
+html {
+  font-size: 80%;
+  /* Scales down all rem-based sizing by 20% */
+}
+
 body {
   background: var(--bg-main);
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-playfair), Georgia, serif;
   color: var(--accent-dark);
   font-weight: 600;
@@ -107,4 +127,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-cta:hover {
   background-color: var(--cta-hover);
   transform: translateY(-2px);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

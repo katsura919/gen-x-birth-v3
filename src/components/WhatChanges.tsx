@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/outline';
 
 export default function WhatChanges() {
     const [isVisible, setIsVisible] = useState(false);
@@ -32,8 +33,7 @@ export default function WhatChanges() {
 
     return (
         <section id="what-changes" className="relative overflow-hidden bg-bg-main py-24 sm:py-32">
-            {/* Subtle Radial Background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,240,248,1)_0%,rgba(253,251,255,0)_70%)]"></div>
+
 
             {/* Background Image Accent */}
             <div className="absolute bottom-0 right-0 h-full w-1/3 opacity-5 pointer-events-none">
@@ -52,35 +52,43 @@ export default function WhatChanges() {
                 </div>
 
                 {/* Benefits Grid */}
-                <div className="mx-auto grid max-w-4xl gap-x-8 gap-y-12 sm:grid-cols-2">
-                    <div className={`space-y-8 transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}`}>
-                        <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[0.2em] text-text-secondary">You Notice</h3>
-                        <div className="space-y-6">
+                <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
+                    {/* Gain Card */}
+                    <div className={`relative overflow-hidden rounded-3xl bg-white/60 p-8 shadow-sm ring-1 ring-indigo-900/5 backdrop-blur-sm transition-all duration-1000 delay-300 md:p-10 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}`}>
+                        <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-primary/10 blur-xl"></div>
+                        <h3 className="mb-8 font-dm-sans text-lg font-bold uppercase tracking-[0.2em] text-primary">You Notice</h3>
+                        <ul className="space-y-6">
                             {benefits.map((item, index) => (
-                                <div key={index} className="flex items-center gap-4">
-                                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl shadow-sm">{item.icon}</span>
+                                <li key={index} className="flex items-start gap-4">
+                                    <div className="mt-1 flex-shrink-0">
+                                        <CheckCircleIcon className="h-6 w-6 text-primary" aria-hidden="true" />
+                                    </div>
                                     <p className="font-playfair text-xl text-text-primary">{item.text}</p>
-                                </div>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
 
-                    <div className={`space-y-8 transition-all duration-1000 delay-500 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}>
-                        <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[0.2em] text-text-secondary">You Stop</h3>
-                        <div className="space-y-4">
-                            <p className="font-inter text-xl text-text-primary">Explaining yourself.</p>
-                            <p className="font-inter text-xl text-text-primary/70">Apologizing for taking up space.</p>
-                            <p className="font-inter text-xl text-text-primary/50">Managing other adults' feelings.</p>
-                            <p className="font-inter text-xl text-text-primary/30">Waiting for permission.</p>
-                        </div>
+                    {/* Release Card */}
+                    <div className={`relative overflow-hidden rounded-3xl bg-white/40 p-8 shadow-sm ring-1 ring-indigo-900/5 backdrop-blur-sm transition-all duration-1000 delay-500 md:p-10 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}>
+                        <div className="absolute bottom-0 left-0 -mb-4 -ml-4 h-24 w-24 rounded-full bg-rose-500/5 blur-xl"></div>
+                        <h3 className="mb-8 font-dm-sans text-lg font-bold uppercase tracking-[0.2em] text-text-secondary">You Stop</h3>
+                        <ul className="space-y-6">
+                            {[
+                                "Explaining yourself.",
+                                "Apologizing for taking up space.",
+                                "Managing other adults' feelings.",
+                                "Waiting for permission."
+                            ].map((item, index) => (
+                                <li key={index} className="flex items-start gap-4">
+                                    <div className="mt-1 flex-shrink-0">
+                                        <XCircleIcon className="h-6 w-6 text-text-secondary/60" aria-hidden="true" />
+                                    </div>
+                                    <p className="font-inter text-lg text-text-primary">{item}</p>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                </div>
-
-                {/* Manifesto Statement */}
-                <div className={`mt-32 text-center transition-all duration-1000 delay-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-                    <p className="mx-auto max-w-4xl font-playfair text-3xl font-bold leading-normal text-secondary sm:text-4xl md:text-5xl">
-                        You live from dignity instead of depletion.
-                    </p>
                 </div>
 
             </div>

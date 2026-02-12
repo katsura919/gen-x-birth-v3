@@ -5,6 +5,7 @@ import { Logo } from './Logo';
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,8 +19,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/90 py-4 shadow-sm backdrop-blur-md'
-                    : 'bg-transparent py-6'
+                ? 'bg-white py-4 shadow-sm backdrop-blur-md'
+                : 'bg-transparent py-6'
                 }`}
         >
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
@@ -40,16 +41,43 @@ export default function Header() {
                     </button>
                 </div>
 
-                {/* Mobile Menu Button (Placeholder) */}
+                {/* Mobile Menu Button */}
                 <div className="sm:hidden">
-                    <button className="text-accent-dark">
-                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="text-accent-dark p-2"
+                        aria-label="Toggle menu"
+                    >
+                        {isMobileMenuOpen ? (
+                            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        ) : (
+                            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        )}
                     </button>
                 </div>
-
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {isMobileMenuOpen && (
+                <div className="absolute top-full left-0 w-full bg-white sm:hidden">
+                    <div className="flex flex-col space-y-4 p-6">
+                        <a
+                            href="https://calendly.com/genxrebirth/new-meeting?back=1"
+                            target='_blank'
+                            className="text-center font-dm-sans text-sm font-bold uppercase tracking-wider text-accent-dark py-3 border border-accent-dark rounded-full hover:bg-accent-dark hover:text-white transition-colors"
+                        >
+                            Book a Call
+                        </a>
+                        <button className="w-full rounded-full bg-secondary py-3 font-dm-sans text-sm font-bold uppercase tracking-wider text-white shadow-md transition-all hover:bg-cta-hover">
+                            Take Quiz
+                        </button>
+                    </div>
+                </div>
+            )}
         </header>
     );
 }

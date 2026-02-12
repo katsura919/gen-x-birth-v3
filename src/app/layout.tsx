@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   description: "A coaching space for women who've spent decades choosing everyone else. It's time to choose yourself.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
