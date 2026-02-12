@@ -13,10 +13,7 @@ import Footer from "@/components/Footer";
 import { ReactLenis, useLenis } from 'lenis/react'
 
 export default function Home() {
-  const lenis = useLenis(({ scroll }) => {
-    // here we can use scroll value
-    console.log(scroll)
-  })
+
   return (
     <ReactLenis root>
       <Hero />
