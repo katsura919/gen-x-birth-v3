@@ -4,7 +4,7 @@ export default function TwoWaysForward() {
     return (
         <section className="bg-bg-main py-24 sm:py-32">
             <div className="mx-auto max-w-[1400px] px-6 lg:px-8">
-            
+
                 <div className="relative overflow-hidden rounded-[2.5rem] bg-secondary shadow-2xl lg:flex lg:items-center lg:gap-x-20">
 
                     {/* Content - Left Side */}
@@ -20,7 +20,7 @@ export default function TwoWaysForward() {
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                                 <a
-                                    href="#"
+                                    href="/quiz"
                                     className="rounded-full bg-white px-8 py-4 text-base font-bold text-[#0F5A5C] shadow-lg hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white font-dm-sans uppercase tracking-widest transition-all hover:-translate-y-1 hover:shadow-xl"
                                 >
                                     Take Free Quiz
