@@ -326,35 +326,7 @@ export default function QuizPage() {
               </div>
             </div>
 
-            {/* CTA Footer */}
-            <div className="rounded-3xl bg-white p-8 md:p-12 text-center shadow-xl ring-1 ring-gray-100 relative overflow-hidden mb-20">
-              <div className="relative z-10">
-                <h2 className="mb-4 font-playfair text-3xl font-bold text-accent-dark">
-                  You Are Not Alone
-                </h2>
-                <p className="mb-8 font-inter text-lg text-text-primary max-w-2xl mx-auto">
-                  Join my free webinar:{" "}
-                  <strong>Midlife Isn’t the End — Own Your Life</strong>.
-                  Explore chronic over-giving, toxic relationship cycles,
-                  reclaiming your passion, and living a life led by YOU.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="rounded-full bg-accent-dark px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-accent-dark/90 transition-all">
-                    Register for Webinar
-                  </button>
-                  <Link
-                    href="/"
-                    className="rounded-full border-2 border-accent-dark px-8 py-4 text-base font-bold text-accent-dark hover:bg-gray-50 transition-all"
-                  >
-                    Back to Home
-                  </Link>
-                </div>
-                <p className="mt-8 text-sm text-text-secondary font-inter">
-                  Hosted by Celeste Angelic London — Gen X Women’s
-                  Self-Restorative Guide
-                </p>
-              </div>
-            </div>
+ 
           </div>
         )}
       </div>
