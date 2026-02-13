@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh] w-full overflow-hidden bg-bg-main">
       {/* Main Container - Two Column Layout */}
-      <div className="relative mx-auto grid min-h-[90vh] max-w-7xl grid-cols-1 items-center gap-12 px-6 pt-24 pb-12 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-12">
+      <div className="relative mx-auto grid min-h-[90vh] max-w-7xl grid-cols-1 items-center gap-12 px-6 mt-20 pb-12 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-12">
         {/* LEFT COLUMN - Text Content */}
         <div
           className={`space-y-6 transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
