@@ -9,7 +9,6 @@ import TheRealIssue from "@/components/TheRealIssue";
 import WhatChanges from "@/components/WhatChanges";
 import MomentOfChoice from "@/components/MomentOfChoice";
 import TwoWaysForward from "@/components/TwoWaysForward";
-import Footer from "@/components/Footer";
 import { ReactLenis, useLenis } from 'lenis/react'
 
 export default function Home() {
@@ -22,10 +21,9 @@ export default function Home() {
       <NotSelfHelp />
       {/* <QuizCTA placement="first" />
       {/* <InternalDialogue />
-      <TheRealIssue /> */} 
+      <TheRealIssue /> */}
       <WhatChanges />
       <TwoWaysForward />
-      <Footer />
     </ReactLenis>
   );
 }
