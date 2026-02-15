@@ -40,8 +40,8 @@ export default function WhatsHappening() {
                     <div className={`transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'}`}>
                         {/* Opening Lines - Stepped List */}
                         <div className="mb-12 space-y-4">
-                                <h2 className="font-playfair text-4xl font-bold italic text-accent-dark sm:text-5xl md:text-6xl lg:text-7xl">
-                                    You're not lazy.
+                                <h2 className="font-playfair text-4xl font-bold italic  sm:text-5xl md:text-6xl lg:text-7xl">
+                                    <span className="text-primary">You're not lazy.</span>
                     
                                 <span className="text-primary text-4xl">    You're not broken.</span>
                             </h2>
@@ -72,7 +72,7 @@ export default function WhatsHappening() {
 
                         {/* Closing Statement */}
                         <div className={`mt-12 transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                            <p className="font-playfair text-3xl font-bold leading-tight text-accent-dark sm:text-4xl">
+                            <p className="font-playfair italic text-3xl font-bold leading-tight text-accent-dark sm:text-4xl">
                                 Nothing is wrong with you.
                                 <br />
                                 <span className="text-secondary">Your system is just outdated.</span>

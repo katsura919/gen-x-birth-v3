@@ -162,7 +162,7 @@ export default function QuizPage() {
               <button
                 onClick={handleNext}
                 disabled={!answers[currentQuestion]}
-                className="rounded-full bg-accent-dark px-12 py-4 text-lg font-bold text-white shadow-lg transition-all hover:bg-accent-dark/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="rounded-full bg-accent-dark px-12 py-4 text-lg font-bold text-white shadow-lg transition-all hover:bg-accent-dark/90 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
               >
                 {currentQuestion === questions.length - 1
                   ? "Finish Quiz"
@@ -307,7 +307,7 @@ export default function QuizPage() {
                 </div>
 
                 {/* Rebirth */}
-                <div className="rounded-3xl bg-accent-dark p-8 md:p-10 shadow-lg text-white">
+                <div className="rounded-3xl bg-primary  p-8 md:p-10 shadow-lg text-white">
                   <h3 className="mb-6 font-playfair text-2xl font-bold text-white">
                     <span className="text-white">What Rebirth Looks Like for You</span>
                   </h3>
@@ -317,7 +317,7 @@ export default function QuizPage() {
                         key={idx}
                         className="flex items-start gap-4 text-lg text-white/90 leading-relaxed"
                       >
-                        <CheckCircleIcon className="h-6 w-6 flex-shrink-0 text-primary" />
+                        <CheckCircleIcon className="h-6 w-6 flex-shrink-0 text-accent-dark" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -330,7 +330,6 @@ export default function QuizPage() {
           </div>
         )}
       </div>
-      <Footer />
     </main>
   );
 }

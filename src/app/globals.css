@@ -6,11 +6,11 @@
 
 :root {
   /* Primary Colors */
-  --primary: #7B6A9B;
+  --primary: #b186e0;
   /* Deep Lavender - Headlines, section accents, hover states */
   --secondary: #82c2b4;
   /* Soft Turquoise - CTA buttons, highlights, key phrases */
-  --accent-dark: #b186e0;
+  --accent-dark: #d2d3ff;
   /* Muted Plum - Hero text, strong headers, footer */
 
   /* Background Colors */
@@ -83,7 +83,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-playfair), Georgia, serif;
-  color: var(--accent-dark);
+  color: var(--primary);
   font-weight: 600;
   line-height: 1.2;
 }

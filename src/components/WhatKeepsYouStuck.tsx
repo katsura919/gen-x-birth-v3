@@ -52,7 +52,7 @@ export default function WhatKeepsYouStuck() {
 
                 {/* Headline */}
                 <h2 className={`mb-16 text-center font-playfair text-3xl font-bold text-accent-dark sm:text-4xl transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                    What Keeps You Stuck
+                    <span className="text-primary">What Keeps You Stuck</span>
                 </h2>
 
                 <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
@@ -82,7 +82,7 @@ export default function WhatKeepsYouStuck() {
                                     {index + 1}
                                 </div>
                                 <div>
-                                    <h3 className="mb-2 font-playfair text-xl font-bold text-accent-dark">{point.title}</h3>
+                                    <h3 className="mb-2 font-playfair text-xl font-bold text-primary">{point.title}</h3>
                                     <p className="font-inter text-lg text-text-primary">{point.description}</p>
                                 </div>
                             </div>

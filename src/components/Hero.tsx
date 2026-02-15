@@ -29,8 +29,8 @@ export default function Hero() {
           </p>
 
           {/* Main Headline */}
-          <h1 className="font-playfair text-4xl font-bold leading-tight text-text-primary sm:text-5xl lg:text-5xl xl:text-6xl">
-            Own Your Life. Reclaim Your Authority. Begin Again-On Your Terms.
+          <h1 className="font-playfair text-4xl font-bold leading-tight text-primary sm:text-5xl lg:text-5xl xl:text-6xl">
+            <span className="text-primary">Own Your Life. Reclaim Your Authority. Begin Again-On Your Terms.</span>
           </h1>
 
           {/* Description */}

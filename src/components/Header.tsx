@@ -38,7 +38,7 @@ export default function Header() {
         {/* Logo */}
         <div className="relative z-50 flex-shrink-0">
           <a href="/">
-            <Logo className="h-10 w-auto text-accent-dark" />
+            <Logo className="h-10 w-auto text-primary" />
           </a>
         </div>
 

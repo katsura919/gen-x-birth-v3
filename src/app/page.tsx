@@ -1,6 +1,7 @@
 "use client";
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
+import MeetCeleste from "@/components/MeetCeleste";
 import WhatsHappening from "@/components/WhatsHappening";
 import NotSelfHelp from "@/components/NotSelfHelp";
 import QuizCTA from "@/components/QuizCTA";
@@ -17,13 +18,10 @@ export default function Home() {
     <ReactLenis root>
       <Hero />
       <WhatsHappening />
-      <AboutMe />
       <WhatKeepsYouStuck />
-      <NotSelfHelp />
-      {/* <QuizCTA placement="first" />
-      {/* <InternalDialogue />
-      <TheRealIssue /> */}
+      <AboutMe />
       <WhatChanges />
+      <MeetCeleste />
       <TwoWaysForward />
     </ReactLenis>
   );
