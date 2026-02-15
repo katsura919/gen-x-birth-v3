@@ -62,14 +62,14 @@ export default function Hero() {
 
         {/* RIGHT COLUMN - Hero Image with Decorative Elements */}
         <div
-          className={`relative transition-all duration-1000 delay-300 hidden lg:block ${isVisible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"}`}
+          className={`relative order-first lg:order-none transition-all duration-1000 delay-300 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"}`}
         >
           {/* Circular Background Shape */}
           <div className="absolute right-0 top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-accent-dark opacity-20 blur-3xl"></div>
 
           {/* Hero Image Container */}
-          <div className="relative z-10">
-            <div className="relative aspect-square overflow-hidden rounded-full">
+          <div className="relative z-10 mx-auto max-w-sm lg:max-w-none">
+            <div className="relative aspect-square overflow-hidden rounded-full font-bold shadow-2xl">
               <Image
                 src="/hero-image.png"
                 alt="Professional woman in leadership"
