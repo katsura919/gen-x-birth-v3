@@ -29,7 +29,7 @@ export default function MeetCeleste() {
     return (
         <section
             id="meet-celeste"
-            className="bg-bg-light py-20 lg:py-32 relative overflow-hidden"
+            className="bg-accent-dark py-20 lg:py-32 relative overflow-hidden"
         >
             {/* Decorative Background Mesh */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
@@ -119,7 +119,7 @@ export default function MeetCeleste() {
                                 </p>
 
                                 <Link
-                                    href="/apply"
+                                    href="/booking"
                                     className="inline-flex w-full items-center justify-center gap-2 bg-white text-primary font-dm-sans font-bold py-3 px-6 rounded-full hover:bg-bg-light transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
                                 >
                                     Apply for Guidance

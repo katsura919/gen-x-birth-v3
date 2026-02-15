@@ -38,7 +38,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden bg-bg-main py-20 lg:py-32">
+    <section className="relative w-full overflow-hidden bg-highlight-bg py-20 lg:py-32">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-16 text-center">
