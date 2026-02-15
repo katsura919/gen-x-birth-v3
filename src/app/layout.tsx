@@ -3,6 +3,7 @@ import { Playfair_Display, Inter, Cormorant_Garamond, DM_Sans } from "next/font/
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 // Font Configurations for "Quiet Power" Theme
 const playfair = Playfair_Display({
@@ -54,6 +55,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
