@@ -15,17 +15,19 @@ export default function Footer() {
                             <Logo className="h-10 w-auto text-white" />
                         </Link>
                         <p className="font-inter text-white/80 leading-relaxed">
-                            Gen X Rebirth is what happens when a woman stops surviving and starts choosing.
+                            Gen X Authority Mentor is what happens when a woman stops surviving and starts choosing.
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white">
+                            <a href="https://www.instagram.com/genxmentor/" target="_blank" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white">
                                 <Instagram className="w-5 h-5" />
                             </a>
-                            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white">
+                            <a href="https://www.linkedin.com/in/celeste-angelic-london-3799b3236/" target="_blank" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white">
                                 <Linkedin className="w-5 h-5" />
                             </a>
-                            <a href="mailto:hello@genxrebirth.com" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white">
-                                <Mail className="w-5 h-5" />
+                        </div>
+                        <div>
+                            <a href="mailto:hello@genxauthoritymentor.com" className="font-inter text-white/80 hover:text-white transition-colors">
+                                hello@genxauthoritymentor.com
                             </a>
                         </div>
                     </div>
@@ -57,7 +59,7 @@ export default function Footer() {
                 {/* Copyright */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                     <p className="font-inter text-sm text-white/60">
-                        &copy; {new Date().getFullYear()} Gen X Rebirth. All rights reserved.
+                        &copy; {new Date().getFullYear()} Gen X Authority Mentor. All rights reserved.
                     </p>
 
                 </div>

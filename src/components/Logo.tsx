@@ -3,7 +3,7 @@ import React from "react";
 export const Logo: React.FC<{ className?: string }> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 240 50"
+    viewBox="0 0 450 50"
     className={className}
     fill="currentColor"
   >
@@ -18,14 +18,14 @@ export const Logo: React.FC<{ className?: string }> = ({ className }) => (
       GEN X
     </text>
     <text
-      x="120"
+      x="130"
       y="35"
       fontFamily="var(--font-playfair), serif"
       fontSize="32"
       fontStyle="italic"
       fontWeight="300"
     >
-      Rebirth
+      Authority Mentor
     </text>
   </svg>
 );

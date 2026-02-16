@@ -35,7 +35,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="font-inter max-w-xl text-lg leading-relaxed text-text-secondary sm:text-2xl">
-            Gen X Rebirth is for women who are done living in reaction mode and
+            Gen X Authority Mentor is for women who are done living in reaction mode and
             ready to rebuild a life that actually fits who they are now.
           </p>
 

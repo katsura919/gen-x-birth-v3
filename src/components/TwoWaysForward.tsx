@@ -16,7 +16,7 @@ export default function TwoWaysForward() {
                             </h2>
                             <p className="mt-6 text-lg leading-8 text-white/90 font-inter max-w-xl mx-auto lg:mx-0">
                                 It's time to take the next step in your professional growth.
-                                You're not alone—Gen X Rebirth has helped hundreds of professionals like you step into leadership with confidence and clarity.
+                                You're not alone, Gen X Authority Mentor has helped hundreds of professionals like you step into leadership with confidence and clarity.
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                                 <a

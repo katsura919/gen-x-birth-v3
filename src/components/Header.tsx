@@ -29,16 +29,15 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 ${
-        isScrolled || isMobileMenuOpen ? "bg-white shadow-sm" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 ${isScrolled || isMobileMenuOpen ? "bg-white shadow-sm" : "bg-transparent"
+        }`}
     >
       {/* Main nav bar - fixed height so nothing shifts */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <div className="relative z-50 flex-shrink-0">
           <a href="/">
-            <Logo className="h-10 w-auto text-primary" />
+            <Logo className="h-8 md:h-10 w-auto text-primary" />
           </a>
         </div>
 
